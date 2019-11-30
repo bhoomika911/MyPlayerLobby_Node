@@ -1,0 +1,308 @@
+{
+	"id": "f13db417-deb4-4aac-9901-a28baab8fa2c",
+	"name": "MyGamerLobby",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"f7ded6b7-c7f3-4455-8f45-a5d81a1ef323",
+		"b27feb93-23b9-450d-832d-caa22212aa60",
+		"949bdd7a-3482-42f5-a87f-df757cc7f287",
+		"714a7c55-7c5c-43a2-81bc-c5f42a0bc698",
+		"dcb4954e-859b-40d6-9b20-c36bf54af532",
+		"810dbca6-a92c-4862-b69c-597f3320ad5d",
+		"77633c8c-5850-464b-827d-d897a74835f4",
+		"e83e899f-dacd-4750-8939-438321c21cee",
+		"5eac2a1b-c260-4e06-b85a-e575b468f082",
+		"943d9b34-a157-4bff-8012-7b5a78b2999f"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "5eac2a1b-c260-4e06-b85a-e575b468f082",
+			"name": "get all user list",
+			"url": "http://localhost:3000/user/list",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "714a7c55-7c5c-43a2-81bc-c5f42a0bc698",
+			"name": "Delete player",
+			"url": "http://localhost:3000/player/delete/5de27bf31aea6c215421e269",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "77633c8c-5850-464b-827d-d897a74835f4",
+			"name": "search game",
+			"url": "http://localhost:3000/game/search",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"searchStr\": \"Cr\"\n\t\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "810dbca6-a92c-4862-b69c-597f3320ad5d",
+			"name": "add game",
+			"url": "http://localhost:3000/game/add",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"title\": \"Football\",\n\"platform\" : \"p1\",\n\"genre\" : \"g1\",\n\"rating\": 1,\n\"publisher\" : \"p1\",\n\"release\" : \"2017\",\n\"status\" :\"active\"\n\t\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "943d9b34-a157-4bff-8012-7b5a78b2999f",
+			"name": "login user",
+			"url": "http://localhost:3000/user/login",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n       \"role\" : \"admin\",\n  \"userid\" :\"admin2\",\n  \"password\" : \"123456\"\n    }",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "949bdd7a-3482-42f5-a87f-df757cc7f287",
+			"name": "get all players list",
+			"url": "http://localhost:3000/player/list",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "b27feb93-23b9-450d-832d-caa22212aa60",
+			"name": "create player",
+			"url": "http://localhost:3000/player/add",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n       \"name\" : \"kohli\",\n  \"rank\" :5,\n  \"score\" : 400000,\n  \"time\" : \"2 days\",\n  \"fvrtGame\" : \"cricket\",\n  \"gamePlayed\" : \"cricket\",\n  \"status\" : \"available\"\n    }",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "dcb4954e-859b-40d6-9b20-c36bf54af532",
+			"name": "update player",
+			"url": "http://localhost:3000/player/update/5de27defff4ede217c60288f",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n       \"name\" : \"Dhoni.....\",\n  \"rank\" :5,\n  \"score\" : 400000,\n  \"time\" : \"2 days\",\n  \"fvrtGame\" : \"cricket\",\n  \"gamePlayed\" : \"cricket\",\n  \"status\" : \"available\"\n    }",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e83e899f-dacd-4750-8939-438321c21cee",
+			"name": "create admin user",
+			"url": "http://localhost:3000/user/add",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n       \"role\" : \"admin\",\n  \"userid\" :\"admin22\",\n  \"password\" : \"123456\"\n    }",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f7ded6b7-c7f3-4455-8f45-a5d81a1ef323",
+			"name": "get all games list",
+			"url": "http://localhost:3000/game/list",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}

@@ -1,0 +1,47 @@
+//**************************************************/
+Collections : 
+//**************************************************/
+
+1.Players
+
+-name (String)
+-rank (Number) (1-10)
+-score (Number)
+-time (String)
+-favourite game (String)
+-games Played (String) (Some static game list, not required in db)
+-status (String)	(available and unavailable)
+
+
+2. Games(add multiple admin)
+
+-Title(String)
+-platform(String)
+-genre(String)
+-rating(Number)
+-publisher(String)
+-release(String)
+-status(String)
+
+3.User list(add multiple admin)
+
+-role
+-userid
+-password
+
+
+//**************************************************/
+API list
+//**************************************************/
+1. Get all players list
+2. Add player
+3. Update player for join game & 
+4. Delete player
+5. Login admin
+6. Add admin user
+7. List admin users
+8. Get all games list
+9. Add game
+
+
+
