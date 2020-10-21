@@ -16,13 +16,14 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // parse requests of content-type - application/json
 app.use(bodyParser.json())
 
+console.log("process.env.NODE_ENV===>",process.env.NODE_ENV);
 // Connecting to the database
-mongoose.connect(dbConfig.url, {
+mongoose.connect(dbConfig[process.env.NODE_ENV].url, {
     useNewUrlParser: true
 }).then(() => {
-    console.log("Successfully connected to the database");
+    // console.log("Successfully connected to the database");
 }).catch(err => {
-    console.log('Could not connect to the database. Exiting now...', err);
+    // console.log('Could not connect to the database. Exiting now...', err);
     process.exit();
 });
 
@@ -33,10 +34,13 @@ app.get('/', (req, res) => {
 
 // listen for requests
 app.listen(3000, () => {
-    console.log("Server is listening on port 3000");
+    console.log("Server is listening on port 3000 : " + process.env.NODE_ENV);
 });
 
 // routes
 require('./app/routes/user.route.js')(app);
 require('./app/routes/game.route.js')(app);
 require('./app/routes/player.route.js')(app);
+
+
+module.exports = app;
