@@ -17,7 +17,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "jest": "^26.6.0",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.3.0",
     "nodemon": "^2.0.2",
     "supertest": "^5.0.0"
